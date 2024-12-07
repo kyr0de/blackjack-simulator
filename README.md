@@ -39,7 +39,7 @@ A classic Blackjack game implementation in vanilla JavaScript with smooth card a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/blackjack-game.git
+git clone https://github.com/kyr0de/blackjack-simulator.git
 ```
 
 2. Open `index.html` in your browser
