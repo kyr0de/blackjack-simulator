@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-crown"></i> Blackjack</h1>
+        
+        <div class="bank-info">
+            <div class="balance">
+                <i class="fas fa-coins"></i> Solde: <span id="balance">1000</span>€
+            </div>
+            <div class="bet-controls">
+                <i class="fas fa-money-bill-wave"></i>
+                <input type="number" id="bet-amount" min="1" value="10" step="5">€
+            </div>
+        </div>
+
+        <div id="message" class="message"></div>
+        
+        <div class="game-area">
+            <div class="dealer-hand">
+                <h2><i class="fas fa-user-tie"></i> Croupier</h2>
+                <div id="dealer-cards" class="cards"></div>
+                <p>Score: <span id="dealer-score">0</span></p>
+            </div>
+
+            <div class="player-hand">
+                <h2><i class="fas fa-user"></i> Joueur</h2>
+                <div id="player-cards" class="cards"></div>
+                <p>Score: <span id="player-score">0</span></p>
+            </div>
+
+            <div class="controls">
+                <button id="deal-button" class="action-button">
+                    <i class="fas fa-play"></i>
+                    <span>Distribuer</span>
+                </button>
+                <button id="hit-button" class="action-button" disabled>
+                    <i class="fas fa-plus"></i>
+                    <span>Tirer</span>
+                </button>
+                <button id="stand-button" class="action-button" disabled>
+                    <i class="fas fa-hand"></i>
+                    <span>Rester</span>
+                </button>
+                <button id="double-button" class="action-button" disabled>
+                    <i class="fas fa-times-2"></i>
+                    <span>Doubler</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
